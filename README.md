@@ -30,7 +30,7 @@ Necessary to set `--shm-size` during run. Recommended to have at least 1GB (`1G`
 
 User datas will be stored at `/docker-puppeteer/userDatas`. A volume can be used for retention.
 
-You can specify with a puppeteer.connect header `x-user-data`, which user data directory it will use, ie: `{ headers: { 'x-user-data': 'my-user-data' } }` - here the folder in `/docker-puppeteer/userDatas/my-user-data` will be used.
+You can specify with a puppeteer.connect header `x-user-data`, which user data directory it will use, ie: `{ headers: { 'x-user-data': 'my-user-data' } }` - here the dir `/docker-puppeteer/userDatas/my-user-data` will be used.
 
 If not specified a browser lifetime one will be used.
 
