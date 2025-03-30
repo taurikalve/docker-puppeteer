@@ -1,6 +1,6 @@
 # Docker Puppeteer
 
-Simple(ish) dockerized puppeteer browser(s). Browsers are created for connection and closed on disconnect. If there are more connections an `MAX_BROWSERS` allows to run concurrently, they'll be added to a waiting queue.
+Simple(ish) dockerized puppeteer browser(s). Browsers are created for connection and closed on disconnect. If there are more connections than `MAX_BROWSERS` allows to run concurrently, they'll be added to a waiting queue.
 
 Example command:
 
