@@ -3,13 +3,14 @@
 Simple(ish) dockerized puppeteer browser(s). Browsers are created for connection and closed on disconnect. If there are more connections an `MAX_BROWSERS` allows to run concurrently, they'll be added to a waiting queue.
 
 Example command:
+
 `docker run -d -e MAX_BROWSERS=2 -p 5000:3000 --security-opt seccomp=/my/path/to/securityOpts.json --shm-size=2g docker-puppeteer`
 
 ## Env:
 
 - `PORT` - default 3000
 - `MAX_BROWSERS` - **required**
-- `TZ`
+- `TZ` - example "Europe/Tallinn"
 
 ## Security opts
 
