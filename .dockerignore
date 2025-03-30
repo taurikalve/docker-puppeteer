@@ -1,0 +1,15 @@
+# General
+**/.git/
+**/node_modules/
+**/dist/
+**/debug/
+**/dev/
+# **/.env*.local
+**/Dockerfile
+**/.dockerignore
+**/npm-debug.log
+**/*.md
+**/scripts/
+
+# Specific
+/userDatas

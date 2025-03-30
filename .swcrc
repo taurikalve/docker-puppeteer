@@ -1,0 +1,19 @@
+{
+  "exclude": [".*\\.d\\.ts$"],
+  "jsc": {
+    "parser": {
+      "syntax": "typescript",
+      "dynamicImport": true
+    },
+    "target": "es2022",
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  },
+  "module": {
+    "type": "commonjs",
+    "noInterop": false
+  },
+  "minify": false
+}

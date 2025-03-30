@@ -1,0 +1,7 @@
+{
+  "verbose": true,
+  "watch": ["src/"],
+  "ignore": ["*.d.ts"],
+  "ext": "ts,json",
+  "env": { "NODE_ENV": "development", "PORT": 5000, "MAX_BROWSERS": 2 }
+}
