@@ -1,9 +1,7 @@
 import type { Socket } from 'node:net';
 import type { IncomingMessage, Server } from 'node:http';
 import http from 'node:http';
-import { promises as fsp } from 'node:fs';
 import { printTime } from '@/lib/utils';
-import { isDev } from '@/lib/consts';
 import { MAX_BROWSERS, PORT } from '@/lib/env';
 import BrowserSwarm from '@/lib/swarm';
 
@@ -87,5 +85,4 @@ export default class BrowserServer {
     await this.swarm.close();
     this.server.close();
   }
-  // ...
 }
