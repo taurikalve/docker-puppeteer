@@ -26,7 +26,6 @@ export default class BrowserServer {
           .map((e) => e.join('='))
           .join('\n'),
       );
-      // ...
     });
 
   private async handleSocket(
@@ -34,7 +33,6 @@ export default class BrowserServer {
     socket: Socket,
     head: Buffer,
   ) {
-    // console.log('socket headers:', req.headers);
     const browser = await this.swarm.get(req.headers['x-user-data']);
 
     socket
