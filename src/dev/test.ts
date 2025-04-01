@@ -1,8 +1,9 @@
 import { randomUUID } from 'node:crypto';
 import path from 'node:path';
 import pptr from 'puppeteer';
-import { PORT } from '@/lib/env';
 import { __userDatasDir } from '@/lib/consts';
+
+const PORT = 5000;
 
 (async function () {
   try {
